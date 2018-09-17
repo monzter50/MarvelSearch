@@ -1,0 +1,135 @@
+
+.form-group {
+    margin-bottom: 5px;
+    position: relative;
+    transition: all .5s ease-in;
+}
+.App-title{
+    text-align: center;
+    color: var(--neutral-color);
+    font-size: 35px;
+}
+input{
+  outline: none;
+  border: none;
+    position: relative;
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: .5s;
+    font-size: 24px;
+    width: 340px;
+    height: 50px;
+  padding: 0 25px;
+    border-radius: 25px 0 0 25px;
+}
+.search{
+    display: inline-block;
+    border: none;
+    transition: .5s;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 24px;
+    border-radius: 0 25px 25px 0;
+    width: 150px;
+    height: 50px;
+    background:var(---third-color);
+    color:var(--neutral-color);
+    cursor: pointer;
+}
+.search:hover{
+    background: var(--five-color);
+}
+span.error{
+    color: var(--neutral-color);
+    font-size: 12px;
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    display: none;
+}
+.card{
+    width: 350px;
+    margin: 2em auto;
+    background: white;
+    overflow: hidden;
+    padding: 0;
+    box-shadow: 0 5px 30px 10px rgba(0,0,0, 0.3);
+    position: absolute;
+    animation: fadeIn 1s ease-in;
+}
+.card-image{
+    position: relative;
+}
+.card-image img{
+    width: 100%;
+    height: auto;
+}
+.card-description{
+    padding: .8em;
+}
+.card-description h1{
+    text-align: center;
+    color:var(--five-color);
+}
+.card-description hr{
+    border:1px solid rgba(247,143,63,.5);
+}
+.card-description p {
+    color:var(---third-color);
+}
+.card-content{
+    position: relative;
+}
+.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    color: var(--neutral-color);
+    font-weight: bold;
+    border:none;
+}
+.close:hover{
+    color: var(--five-color);
+    transition: all .5s ease-in;
+    background: none;
+}
+.hidden{
+    opacity: 0;
+}
+.not-founds h1{
+    text-align: center;
+    color: rgba(238,238,238,.6);
+    transition: fadeIn .5s ease-in;
+}
+.card-title{
+    position: absolute;
+    z-index: 1;
+    background: rgba(247,143,63,0.7);
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    color: var(--neutral-color);
+}
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes load8 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

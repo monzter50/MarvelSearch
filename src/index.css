@@ -1,0 +1,39 @@
+:root{
+  --primary-color:#e23636;
+  --neutral-color:#ffffff;
+  --grey:#eeeeee;
+  --first-color:#e23636;
+  --second-color:#000000;
+  ---third-color:#504a4a;
+  --four-color: 	#518cca;
+  --five-color:#f78f3f;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background-color: var(--primary-color);
+  font-family: "Comic Sans MS";
+}
+.App{
+  display: grid;
+  min-height: 100vh;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+
+}
+.loader {
+  position: absolute;
+  width: 6em;
+  height: 6em;
+  top: 50%;
+  left: 50%;
+  border: 1.1em solid rgba(0, 0, 0, 0.2);
+  border-left: 1.1em solid #000000;
+  border-radius: 50%;
+  animation: load8 1.1s infinite linear;
+}
