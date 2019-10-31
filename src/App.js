@@ -4,7 +4,7 @@ import  MD5 from './md5/md5';
 import  {hash} from './md5/hash';
 import Card from './components/Card';
 import Search from './components/Search';
-const privateKey ="457456a87fee270cdd14a66fba297583c68cc0ae",
+const privateKey ="PRIVATE", // Replace with your private Key
 publicKey ="1861cffafdb4e3be24458342cfc915e9";
 const ts = Date.now();
 const hash2 = MD5(ts + privateKey + publicKey);
